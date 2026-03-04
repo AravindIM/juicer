@@ -1,6 +1,8 @@
-# juicer
+# Juicer
 
 Compress the fruit to extract the juice from it!
+
+Juicer is a compression program to compress files and extract compressed files.
 
 ## build
 
