@@ -7,7 +7,7 @@
 int main(int argc, char **argv) {
   struct config cfg;
   struct ast_node *node;
-  if (config_from_opt(argc, argv, &cfg) != CONFIG_SUCCESS) {
+  if (get_config(argc, argv, &cfg) != CONFIG_SUCCESS) {
     if (!cfg.input_file) {
       fprintf(stderr, ERRMSG_NO_INPUT_FILE);
     }

@@ -21,6 +21,6 @@ struct config {
   char *output_file;
 };
 
-int config_from_opt(int argc, char **argv, struct config *cfg);
+int get_config(int argc, char **argv, struct config *cfg);
 
 #endif

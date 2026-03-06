@@ -2,7 +2,7 @@
 #include <getopt.h>
 #include <stddef.h>
 
-int config_from_opt(int argc, char **argv, struct config *cfg) {
+int get_config(int argc, char **argv, struct config *cfg) {
   struct option long_options[] = {OPT_OUTPUT, OPT_TERM};
   char short_options[] = SHORT_OPTS;
   int option;
