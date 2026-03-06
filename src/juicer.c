@@ -9,10 +9,7 @@ int main(int argc, char **argv) {
   struct ast_node *node;
   int config_status = get_config(argc, argv, &cfg);
   if (config_status != CONFIG_SUCCESS) {
-
     switch (config_status) {
-    case CONFIG_SUCCESS:
-      break;
     case EOPTUNK:
       fprintf(stderr, ERRMSG_UNK_OPT);
       break;
