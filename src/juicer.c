@@ -39,7 +39,7 @@ int main(int argc, char **argv) {
   if (cfg.action == ACT_COMPRESS) {
     switch (cfg.format) {
     case FMT_RLE:
-      if (rle(src, dst)) {
+      if (rle_compress(src, dst)) {
         fprintf(stderr, ERRMSG_COMPRESSION_FAILED);
       }
       break;

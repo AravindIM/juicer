@@ -5,6 +5,6 @@
 
 #include <stdio.h>
 
-int rle(FILE *in, FILE *out);
+int rle_compress(FILE *in, FILE *out);
 
 #endif
